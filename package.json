@@ -1,0 +1,19 @@
+{
+  "name": "ordinary-kriging-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Windows-local Ordinary Kriging interpolation and leave-one-out cross-validation backend (TypeScript + Node.js + SQLite), API and CLI only.",
+  "type": "module",
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/**/*.test.js\"",
+    "start": "node dist/src/server.js",
+    "demo": "node dist/src/demo.js",
+    "cli": "node dist/src/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
